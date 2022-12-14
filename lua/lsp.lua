@@ -11,7 +11,7 @@ local lspkind = require('lspkind')
 
 cmp.setup {
   completion = {
-    autocomplete = true
+    autocomplete = false
   },
   snippet = {
     expand = function(args)
