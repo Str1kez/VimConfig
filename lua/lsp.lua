@@ -10,9 +10,9 @@ local cmp = require 'cmp'
 local lspkind = require('lspkind')
 
 cmp.setup {
-  completion = {
-    autocomplete = false
-  },
+  -- completion = {
+  --   autocomplete = true
+  -- },
   snippet = {
     expand = function(args)
       require('luasnip').lsp_expand(args.body)
