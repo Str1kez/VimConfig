@@ -1,15 +1,8 @@
-vim.api.nvim_create_autocmd({'BufWritePre'}, {
+vim.api.nvim_create_autocmd({'QuitPre'}, {
     pattern = '*.go',
     callback = function()
-      vim.lsp.buf.formatting_sync(nil, 3000)
+      vim.lsp.buf.formatting(nil, 3000)
     end
-})
-
-vim.api.nvim_create_autocmd({'BufWritePre'}, {
-  pattern = '*.py',
-  callback = function()
-    vim.api.nvim_command(':Isort')
-  end
 })
 
 -- To get your imports ordered on save, like goimports does, you can define a helper function in Lua:

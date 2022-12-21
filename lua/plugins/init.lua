@@ -51,10 +51,6 @@ return require('packer').startup(
             'numToStr/Comment.nvim',
             config = function() require('Comment').setup() end
         }
-        use {
-          'stsewd/isort.nvim',
-          run = ':UpdateRemotePlugins',
-        }
         -- use {
         --     'justinmk/vim-sneak',
         --     config = function() require('plugins.sneak') end
