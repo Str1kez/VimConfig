@@ -6,6 +6,6 @@ local g = vim.g
 local cmd = vim.cmd
 
 opt.termguicolors = true      --  24-bit RGB colors
-cmd'colorscheme nord'
+cmd'colorscheme gruvbox'
 g.material_theme_style = 'ocean'
 g.transparent_enabled = true
