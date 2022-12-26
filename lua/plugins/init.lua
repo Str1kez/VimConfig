@@ -72,6 +72,9 @@ return require('packer').startup(
         use 'kaicataldo/material.vim'
         use 'ayu-theme/ayu-vim'
         use 'arcticicestudio/nord-vim'
+        use 'sainnhe/sonokai' 
+        use "rebelot/kanagawa.nvim"
+        use 'sainnhe/gruvbox-material'
         use {
             'nvim-lualine/lualine.nvim',
             config = function() require('lualine').setup() end
