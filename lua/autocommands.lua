@@ -1,7 +1,7 @@
 vim.api.nvim_create_autocmd({'QuitPre'}, {
     pattern = '*.go',
     callback = function()
-      vim.lsp.buf.formatting(nil, 3000)
+      vim.lsp.buf.format(nil, 3000)
     end
 })
 
