@@ -64,14 +64,30 @@ return require('packer').startup(
         use 'ray-x/lsp_signature.nvim'
         use {
             'nvim-telescope/telescope.nvim', tag = '0.1.0',
-            requires = { {'nvim-lua/plenary.nvim'} }
+            requires = { {'nvim-lua/plenary.nvim'} },
+            config = function() 
+              require("telescope").setup {
+                    pickers = {
+                        live_grep = {
+                            additional_args = function(opts)
+                                return {"--hidden", "--no-ignore"}
+                            end
+                        },
+                      find_files = {
+                        find_command = {"rg", "--no-ignore", "--hidden", "--files"}
+                        -- hidden = true,
+                        -- ignore = true
+                      }
+                }
+              }
+            end
         }
         use {
             'nvim-telescope/telescope-fzf-native.nvim',
             run = 'make',
             config = function() require('telescope').load_extension('fzf') end      
         }
-
+        
         use 'morhetz/gruvbox'
         use 'mhartington/oceanic-next'  
         use 'kaicataldo/material.vim'
