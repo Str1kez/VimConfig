@@ -5,6 +5,13 @@ vim.api.nvim_create_autocmd({'QuitPre'}, {
     end
 })
 
+vim.api.nvim_create_autocmd("BufWritePre", {
+    pattern = "*.rs",
+    callback = function()
+      vim.lsp.buf.format({ timeout_ms = 200 })
+  end,
+})
+
 -- To get your imports ordered on save, like goimports does, you can define a helper function in Lua:
 
 vim.api.nvim_create_autocmd({'BufWritePre'}, {
