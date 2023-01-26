@@ -15,6 +15,7 @@ return require('packer').startup(
         use 'hrsh7th/cmp-nvim-lsp'
         use 'saadparwaiz1/cmp_luasnip'
         use 'L3MON4D3/LuaSnip'
+        use 'simrat39/rust-tools.nvim'
         -- use {
         --     'nvim-treesitter/nvim-treesitter',
         --     run = ':TSUpdate',
@@ -96,6 +97,7 @@ return require('packer').startup(
         use 'sainnhe/sonokai' 
         use "rebelot/kanagawa.nvim"
         use 'sainnhe/gruvbox-material'
+        use "EdenEast/nightfox.nvim"
         use {
             'nvim-lualine/lualine.nvim',
             config = function() require('lualine').setup() end

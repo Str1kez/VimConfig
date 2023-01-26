@@ -101,6 +101,48 @@ nvim_lsp.pyright.setup {
     }
 }
 
+local rt = require("rust-tools")
+
+rt.setup({
+  tools = {
+    runnables = {
+      use_telescope = true,
+    }
+  },
+  server = {
+    on_attach = on_attach,
+    settings = {
+      ["rust-analyzer"] = {
+        checkOnSave = {
+          command = "clippy",
+        }
+      }
+    }
+  },
+})
+
+-- nvim_lsp.rust_analyzer.setup({
+--     on_attach=on_attach,
+--     settings = {
+--         ["rust-analyzer"] = {
+--             imports = {
+--                 granularity = {
+--                     group = "module",
+--                 },
+--                 prefix = "self",
+--             },
+--             cargo = {
+--                 buildScripts = {
+--                     enable = true,
+--                 },
+--             },
+--             procMacro = {
+--                 enable = true
+--             },
+--         }
+--     }
+-- })
+
 -- local function config(_config)
 --     return vim.tbl_deep_extend('force', {
 --       capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
