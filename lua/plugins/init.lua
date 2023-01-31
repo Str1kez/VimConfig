@@ -16,6 +16,7 @@ return require('packer').startup(
         use 'saadparwaiz1/cmp_luasnip'
         use 'L3MON4D3/LuaSnip'
         use 'simrat39/rust-tools.nvim'
+        use "b0o/schemastore.nvim"
         -- use {
         --     'nvim-treesitter/nvim-treesitter',
         --     run = ':TSUpdate',

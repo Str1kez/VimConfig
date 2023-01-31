@@ -101,6 +101,36 @@ nvim_lsp.pyright.setup {
     }
 }
 
+local util = require "lspconfig/util"
+
+nvim_lsp.bashls.setup {
+  on_attach = on_attach,
+}
+
+nvim_lsp.dockerls.setup {
+  on_attach = on_attach,
+}
+
+nvim_lsp.yamlls.setup{
+  settings = {
+    yaml = {
+      schemas = require('schemastore').json.schemas {
+        select = {
+          'docker-compose.yml',
+        },
+      },
+      validate = { enable = true },
+      -- format = {
+      --   enable = true,
+      -- },
+      -- schemas = {
+      --   ["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "/*",
+      -- },
+    },
+  }
+}
+
+
 local rt = require("rust-tools")
 
 rt.setup({
@@ -152,7 +182,6 @@ rt.setup({
 --     }, _config or {})
 -- end
 
-local util = require "lspconfig/util"
 
 nvim_lsp.gopls.setup {
   on_attach = on_attach,

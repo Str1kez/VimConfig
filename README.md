@@ -4,6 +4,9 @@
 ```commmandline
 sudo npm install -g npm@latest
 sudo npm install -g pyright
+sudo npm install -g bash-language-server
+sudo npm install -g dockerfile-language-server-nodejs
+sudo yarn global add yaml-language-server
 python3 -m pip install pynvim
 go install golang.org/x/tools/gopls@latest
 rustup component add rust-analyzer
