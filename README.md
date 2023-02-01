@@ -30,6 +30,12 @@ sudo snap install --beta nvim --classic
 ### Plugins
 [Packer](https://github.com/wbthomason/packer.nvim)
 
+<u>Warning!</u>
+
+Need to reset plugin for **nvim-tree** to *e14989c*
+
+While having bug with opening
+
 Inside NVim
 ```commandline
 :PackerSync
