@@ -10,6 +10,7 @@ sudo yarn global add yaml-language-server
 python3 -m pip install pynvim
 go install golang.org/x/tools/gopls@latest
 rustup component add rust-analyzer
+cargo install silicon
 ln -s $HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer $CARGOPATH/bin
 ```
 

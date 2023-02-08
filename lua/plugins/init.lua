@@ -59,14 +59,14 @@ return require('packer').startup(
             run = function() vim.fn["mkdp#util#install"]() end
         }
         use {
+            'segeljakt/vim-silicon',
+            config = function() require('plugins.silicon') end
+        }
+        use {
             "kylechui/nvim-surround",
             tag = "*", -- Use for stability; omit to use `main` branch for the latest features
             config = function() require("nvim-surround").setup() end
         }
-        -- use {
-        --     'justinmk/vim-sneak',
-        --     config = function() require('plugins.sneak') end
-        -- }
         use 'voldikss/vim-floaterm'
         use 'ray-x/lsp_signature.nvim'
         use {
