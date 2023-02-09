@@ -59,6 +59,12 @@ return require('packer').startup(
             run = function() vim.fn["mkdp#util#install"]() end
         }
         use {
+            'lukas-reineke/headlines.nvim',
+            config = function()
+                require('headlines').setup()
+            end,
+        }
+        use {
             'segeljakt/vim-silicon',
             config = function() require('plugins.silicon') end
         }
@@ -99,7 +105,7 @@ return require('packer').startup(
         use 'mhartington/oceanic-next'  
         use 'kaicataldo/material.vim'
         use 'ayu-theme/ayu-vim'
-        use 'arcticicestudio/nord-vim'
+        use 'shaunsingh/nord.nvim'
         use 'sainnhe/sonokai' 
         use "rebelot/kanagawa.nvim"
         use 'sainnhe/gruvbox-material'
