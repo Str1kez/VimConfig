@@ -18,10 +18,6 @@ return require('packer').startup(
         use "rafamadriz/friendly-snippets"
         use 'simrat39/rust-tools.nvim'
         use "b0o/schemastore.nvim"
-        -- use {
-        --     'nvim-treesitter/nvim-treesitter',
-        --     run = ':TSUpdate',
-        -- }
         use {
             'nvim-treesitter/nvim-treesitter',
             run = function()
@@ -72,22 +68,7 @@ return require('packer').startup(
         use {
             'nvim-telescope/telescope.nvim', tag = '0.1.0',
             requires = { {'nvim-lua/plenary.nvim'} },
-            config = function() 
-              require("telescope").setup {
-                    pickers = {
-                        live_grep = {
-                            additional_args = function(opts)
-                                return {"--hidden", "--no-ignore"}
-                            end
-                        },
-                      find_files = {
-                        find_command = {"rg", "--no-ignore", "--hidden", "--files"}
-                        -- hidden = true,
-                        -- ignore = true
-                      }
-                }
-              }
-            end
+            config = function() require('plugins.telescope') end
         }
         use {
             'nvim-telescope/telescope-fzf-native.nvim',
@@ -95,9 +76,9 @@ return require('packer').startup(
             config = function() require('telescope').load_extension('fzf') end      
         }
         
-        use 'morhetz/gruvbox'
+        use "ellisonleao/gruvbox.nvim"
         use 'mhartington/oceanic-next'  
-        use 'kaicataldo/material.vim'
+        use 'marko-cerovac/material.nvim'
         use 'ayu-theme/ayu-vim'
         use 'shaunsingh/nord.nvim'
         use 'sainnhe/sonokai' 
