@@ -59,12 +59,6 @@ return require('packer').startup(
             run = function() vim.fn["mkdp#util#install"]() end
         }
         use {
-            'lukas-reineke/headlines.nvim',
-            config = function()
-                require('headlines').setup()
-            end,
-        }
-        use {
             'segeljakt/vim-silicon',
             config = function() require('plugins.silicon') end
         }
