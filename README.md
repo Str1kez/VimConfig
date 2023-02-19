@@ -39,6 +39,8 @@ Need to reset plugin for **nvim-tree** to *e14989c*
 
 While having bug with opening
 
+For Marksman installation visit [this rep](https://github.com/artempyanykh/marksman)
+
 Inside NVim
 ```commandline
 :PackerSync
