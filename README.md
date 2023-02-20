@@ -8,6 +8,7 @@ sudo npm install -g bash-language-server
 sudo npm install -g dockerfile-language-server-nodejs
 sudo npm install -g vscode-langservers-extracted
 sudo npm install -g typescript typescript-language-server
+sudo npm install -g stylelint-lsp
 sudo yarn global add yaml-language-server
 python3 -m pip install pynvim
 go install golang.org/x/tools/gopls@latest

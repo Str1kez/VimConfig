@@ -17,6 +17,7 @@ return require('packer').startup(
         use 'L3MON4D3/LuaSnip'
         use "rafamadriz/friendly-snippets"
         use 'simrat39/rust-tools.nvim'
+        use 'jose-elias-alvarez/null-ls.nvim'
         use "b0o/schemastore.nvim"
         use {
             'nvim-treesitter/nvim-treesitter',
