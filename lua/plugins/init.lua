@@ -26,7 +26,10 @@ return require('packer').startup(
                 ts_update()
             end,
         }
-
+        use {
+            "mrjones2014/nvim-ts-rainbow",
+            config = function() require ('plugins.nvim-ts-rainbow') end
+        }
         use {
             'lewis6991/gitsigns.nvim',
             config = function() require('gitsigns').setup() end
@@ -63,6 +66,10 @@ return require('packer').startup(
             "kylechui/nvim-surround",
             tag = "*", -- Use for stability; omit to use `main` branch for the latest features
             config = function() require("nvim-surround").setup() end
+        }
+        use {
+            "lukas-reineke/indent-blankline.nvim",
+            config = function() require('plugins.indent-blankline') end
         }
         use 'voldikss/vim-floaterm'
         use 'ray-x/lsp_signature.nvim'
