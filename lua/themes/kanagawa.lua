@@ -13,5 +13,7 @@ require'kanagawa'.setup({
     specialReturn = true,
     specialException = true,
     terminalColors = true,
-    colors = my_colors}
+    colors = {
+      palette = my_colors,
+    }}
     )
