@@ -34,13 +34,18 @@ sudo snap install --beta nvim --classic
 ### Plugins
 [Packer](https://github.com/wbthomason/packer.nvim)
 
-<u>Warning!</u>
+#### Warning!
 
-Need to reset plugin for **nvim-tree** to *e14989c*
-
-While having bug with opening
+Need to reset plugin for **nvim-tree** to *e14989c* While having bug with opening
 
 For Marksman installation visit [this rep](https://github.com/artempyanykh/marksman)
+
+If you have a problem with markdown-preview.nvim:
+
+1. Go to `.local/share/nvim/site/pack/packer/start/markdown-preview.nvim`
+2. Run `yarn install`
+3. Run `yarn build`
+4. If you have an errror check `:mess` in nvim, or add this on second step: `export NODE_OPTIONS=--openssl-legacy-provider`
 
 Inside NVim
 ```commandline
