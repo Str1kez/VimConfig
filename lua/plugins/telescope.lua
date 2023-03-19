@@ -1,14 +1,13 @@
 require("telescope").setup {
       pickers = {
-          live_grep = {
-              additional_args = function(opts)
-                  return {"--hidden", "--no-ignore"}
-              end
-          },
+        live_grep = {
+          additional_args = function(opts)
+            return {"--hidden"}
+          end
+        },
         find_files = {
-          find_command = {"rg", "--no-ignore", "--hidden", "--files"}
-          -- hidden = true,
-          -- ignore = true
+          --- --no-ignore
+          find_command = {"rg", "--hidden", "--files"}
         }
   }
 }
