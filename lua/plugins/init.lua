@@ -31,6 +31,10 @@ return require('packer').startup(
             config = function() require ('plugins.nvim-ts-rainbow') end
         }
         use {
+            "windwp/nvim-ts-autotag",
+            config = function() require ('plugins.nvim-ts-autotag') end
+        }
+        use {
             'lewis6991/gitsigns.nvim',
             config = function() require('gitsigns').setup() end
         }

@@ -1,4 +1,8 @@
 require('gruvbox').setup({
-  italic = false,
+  italic = {
+    strings = false,
+    comments = true,
+    operators = true,
+  },
   contrast = "",
 })
