@@ -18,8 +18,19 @@ ln -s $HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer
 ```
 
 ## Installation
+from SnapStore (often old versions)
 ```commandline
 sudo snap install --beta nvim --classic
+```
+
+or download `neovim.appimage` from github (fresh version compared to snap)
+
+```commandline
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+
+# Availability from anywhere
+sudo ln -s ${PWD}/nvim.appimage /usr/bin/nvim
 ```
 
 ### Path (deprecated)
@@ -33,10 +44,6 @@ sudo snap install --beta nvim --classic
 
 ### Plugins
 [Packer](https://github.com/wbthomason/packer.nvim)
-
-#### Warning!
-
-Need to reset plugin for **nvim-tree** to *e14989c* While having bug with opening
 
 For Marksman installation visit [this rep](https://github.com/artempyanykh/marksman)
 
@@ -56,3 +63,8 @@ or
 ```commandline
 nvim +PackerSync
 ```
+
+#### Warning! (Don't need on 0.9.0)
+
+Need to reset plugin for **nvim-tree** to *e14989c* While having bug with opening
+

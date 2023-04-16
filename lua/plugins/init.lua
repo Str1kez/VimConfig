@@ -60,7 +60,8 @@ return require('packer').startup(
         }
         use{
             "iamcco/markdown-preview.nvim",
-            run = function() vim.fn["mkdp#util#install"]() end
+            run = function() vim.fn["mkdp#util#install"]() end,
+            config = function() require('plugins.markdown-preview') end
         }
         use {
             'segeljakt/vim-silicon',
