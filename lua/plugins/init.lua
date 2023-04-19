@@ -98,6 +98,7 @@ return require('packer').startup(
         use "rebelot/kanagawa.nvim"
         use 'sainnhe/gruvbox-material'
         use "EdenEast/nightfox.nvim"
+        use { "catppuccin/nvim", as = "catppuccin" }
         use {
             'nvim-lualine/lualine.nvim',
             config = function() require('lualine').setup() end
