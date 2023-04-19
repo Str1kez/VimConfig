@@ -101,8 +101,9 @@ return require('packer').startup(
         use { "catppuccin/nvim", as = "catppuccin" }
         use {
             'nvim-lualine/lualine.nvim',
-            config = function() require('lualine').setup() end
-    }
+            config = function() require('lualine').setup() end,
+            requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        }
         use 'xiyaowong/nvim-transparent'
 
 
