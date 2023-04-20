@@ -17,5 +17,6 @@ g.transparent_enabled = false
 g.material_style = 'darker'
 g.nord_italic = false
 
-cmd'colorscheme gruvbox' 
--- require('nord').set()
+-- cmd'colorscheme gruvbox' 
+-- cmd'colorscheme catppuccin-mocha'
+require('nord').set()
