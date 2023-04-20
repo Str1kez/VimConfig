@@ -17,6 +17,8 @@ cargo install silicon
 ln -s $HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer $CARGOPATH/bin
 ```
 
+Other dependencies in [Plugins](#plugins)  
+
 ## Installation
 from SnapStore (often old versions)
 ```commandline
@@ -43,16 +45,26 @@ sudo ln -s ${PWD}/nvim.appimage /usr/bin/nvim
 ```
 
 ### Plugins
-[Packer](https://github.com/wbthomason/packer.nvim)
 
+#### Marksman
 For Marksman installation visit [this rep](https://github.com/artempyanykh/marksman)
 
+#### Lua LSP
+For Lua LSP installation visit [this rep](https://github.com/LuaLS/lua-language-server) \
+Download archive and create link \
+`sudo ln -s ${PWD}/lua-language-server.../bin/lua-language-server /usr/bin/lua-language-server`
+
+#### Markdown Preview
 If you have a problem with markdown-preview.nvim:
 
 1. Go to `.local/share/nvim/site/pack/packer/start/markdown-preview.nvim`
 2. Run `yarn install`
 3. Run `yarn build`
 4. If you have an errror check `:mess` in nvim, or add this on second step: `export NODE_OPTIONS=--openssl-legacy-provider`
+
+#### Installation
+
+[Packer](https://github.com/wbthomason/packer.nvim)
 
 Inside NVim
 ```commandline
