@@ -15,7 +15,7 @@
 -- Please see https://github.com/nvim-tree/nvim-tree.lua/wiki/Migrating-To-on_attach for assistance in migrating.
 --
 
-function on_attach(bufnr)
+function nt_on_attach(bufnr)
   local api = require('nvim-tree.api')
 
   local function opts(desc)
@@ -88,4 +88,4 @@ function on_attach(bufnr)
 
 end
 
-return on_attach
+return nt_on_attach
