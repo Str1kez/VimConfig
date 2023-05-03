@@ -12,6 +12,7 @@ nvim_lsp.gopls.setup {
         shadow = true,
       },
       staticcheck = true,
+      gofumpt = true,
     },
   },
 }
