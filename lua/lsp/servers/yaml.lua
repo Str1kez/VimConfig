@@ -1,4 +1,4 @@
-nvim_lsp.yamlls.setup{
+nvim_lsp.yamlls.setup {
   settings = {
     yaml = {
       schemas = require('schemastore').json.schemas {

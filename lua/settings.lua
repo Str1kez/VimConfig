@@ -1,19 +1,19 @@
-local g = vim.g                 -- global variables
-local opt = vim.opt             -- global/buffer/windows-scoped options
+local g = vim.g     -- global variables
+local opt = vim.opt -- global/buffer/windows-scoped options
 
 -----------------------------------------------------------
 -- Главные
 -----------------------------------------------------------
-opt.colorcolumn = '120'              -- Разделитель на 80 символов
-opt.cursorline = true               -- Подсветка строки с курсором
-opt.spelllang = { 'en_us', 'ru' }    -- Словари рус eng
-opt.number = true                   -- Включаем нумерацию строк
-opt.relativenumber = true           -- Вкл. относительную нумерацию строк
-opt.so=999                          -- Курсор всегда в центре экрана
-opt.undofile = true                 -- Возможность отката назад
-opt.splitright = true               -- vertical split вправо
-opt.splitbelow = true               -- horizontal split вниз
-opt.mouse = 'a'                     -- enable mouse
+opt.colorcolumn = '120'           -- Разделитель на 80 символов
+opt.cursorline = true             -- Подсветка строки с курсором
+opt.spelllang = { 'en_us', 'ru' } -- Словари рус eng
+opt.number = true                 -- Включаем нумерацию строк
+opt.relativenumber = true         -- Вкл. относительную нумерацию строк
+opt.so = 999                      -- Курсор всегда в центре экрана
+opt.undofile = true               -- Возможность отката назад
+opt.splitright = true             -- vertical split вправо
+opt.splitbelow = true             -- horizontal split вниз
+opt.mouse = 'a'                   -- enable mouse
 opt.encoding = 'utf-8'
 vim.api.nvim_command("set noswapfile")
 opt.scrolloff = 7
@@ -35,9 +35,9 @@ opt.list = true
 opt.listchars:append "space:⋅"
 -- opt.listchars:append "eol:↴"
 
-g.netrw_banner = 0                  -- hide banner above files
-g.netrw_liststyle = 3               -- tree instead of plain view
-g.netrw_browse_split = 3 
+g.netrw_banner = 0    -- hide banner above files
+g.netrw_liststyle = 3 -- tree instead of plain view
+g.netrw_browse_split = 3
 
 
 vim.cmd([[

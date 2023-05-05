@@ -5,7 +5,7 @@ local opt = vim.opt
 local g = vim.g
 local cmd = vim.cmd
 
-opt.termguicolors = true      --  24-bit RGB colors
+opt.termguicolors = true --  24-bit RGB colors
 g.transparent_enabled = false
 
 -- g.gruvbox_material_better_performance = 1
@@ -17,6 +17,6 @@ g.transparent_enabled = false
 g.material_style = 'darker'
 g.nord_italic = false
 
--- cmd'colorscheme gruvbox' 
+cmd 'colorscheme gruvbox'
 -- cmd'colorscheme catppuccin-mocha'
-require('nord').set()
+-- require('nord').set()

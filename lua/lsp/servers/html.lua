@@ -1,3 +1,3 @@
-nvim_lsp.html.setup{
-  on_attach=on_attach,
+nvim_lsp.html.setup {
+  on_attach = on_attach,
 }
