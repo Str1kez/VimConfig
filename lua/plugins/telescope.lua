@@ -9,5 +9,8 @@ require("telescope").setup {
       --- --no-ignore
       find_command = { "rg", "--hidden", "--files" }
     }
+  },
+  defaults = {
+    file_ignore_patterns = {".git"}
   }
 }
