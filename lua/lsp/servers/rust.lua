@@ -10,6 +10,13 @@ rt.setup({
     }
   },
   server = {
+    capabilities = {
+      workspace = {
+        didChangeWatchedFiles = {
+          dynamicRegistration = true
+        }
+      }
+    },
     on_attach = on_attach,
     settings = {
       ["rust-analyzer"] = {

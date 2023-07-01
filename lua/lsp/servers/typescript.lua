@@ -4,6 +4,13 @@ nvim_lsp.tsserver.setup {
     client.server_capabilities.documentRangeFormattingProvider = false
     on_attach(client, buffnr)
   end,
+  capabilities = {
+    workspace = {
+      didChangeWatchedFiles = {
+        dynamicRegistration = true
+      }
+    }
+  },
 }
 
 nvim_lsp.stylelint_lsp.setup {

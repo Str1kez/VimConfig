@@ -4,6 +4,13 @@ nvim_lsp.pyright.setup {
     client.server_capabilities.documentRangeFormattingProvider = false
     on_attach(client, buffnr)
   end,
+  capabilities = {
+    workspace = {
+      didChangeWatchedFiles = {
+        dynamicRegistration = true
+      }
+    }
+  },
   flags = {
     debounce_text_changes = 150,
   }
