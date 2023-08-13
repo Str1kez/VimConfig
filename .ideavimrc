@@ -36,6 +36,8 @@ map gn gt
 map gp gT
 map gw :wq<CR>
 map gf <Action>(ReformatCode)
+map gcf <Action>(Forward)
+map gcb <Action>(Back)
 
 """ leader mappings
 map <leader>f <Action>(GotoFile)
@@ -44,6 +46,7 @@ map <leader>r <Action>(Run)
 map <leader>ca <Action>(CollapseAllRegions)
 map <leader>c <Action>(CollapseSelection)
 map <leader>ea <Action>(ExpandAllRegions)
+map <leader>s <Action>(FileStructurePopup)
 
 """ space mappings
 map <space>e <Action>(ShowErrorDescription)
