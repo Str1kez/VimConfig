@@ -36,6 +36,7 @@ map gn gt
 map gp gT
 map gw :wq<CR>
 map gf <Action>(ReformatCode)
+map gi <Action>(GotoImplementation)
 map gcf <Action>(Forward)
 map gcb <Action>(Back)
 
