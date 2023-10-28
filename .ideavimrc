@@ -14,6 +14,8 @@
 
 set surround
 set commentary
+set visualbell
+set noerrorbells
 
 sethandler <C-B> a:vim
 sethandler <C-C> a:ide
@@ -27,7 +29,7 @@ sethandler <C-W> a:ide
 sethandler <C-[> a:ide
 sethandler <C-]> a:ide
 
-"""""""""""""""""" mappings
+"""""""""""""""""" mapping
 inoremap jk <esc>:w<CR>
 let mapleader = ","
 
