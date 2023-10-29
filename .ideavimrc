@@ -51,6 +51,8 @@ map <leader>ca <Action>(CollapseAllRegions)
 map <leader>c <Action>(CollapseSelection)
 map <leader>ea <Action>(ExpandAllRegions)
 map <leader>s <Action>(FileStructurePopup)
+map <leader>ts <Action>(SurroundWithLiveTemplate)
+map <leader>t <Action>(InsertLiveTemplate)
 
 """ space mappings
 map <space>e <Action>(ShowErrorDescription)
