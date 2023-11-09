@@ -45,9 +45,7 @@ map gcb <Action>(Back)
 """ leader mappings
 map <leader>f <Action>(GotoFile)
 map <leader>g <Action>(FindInPath)
-map <leader>r <Action>(Run)
-map <leader>R <Action>(Stop)
-map <leader>rn <Action>(RenameElement)
+map <leader>r <Action>(RenameElement)
 map <leader>ca <Action>(CollapseAllRegions)
 map <leader>c <Action>(CollapseSelection)
 map <leader>ea <Action>(ExpandAllRegions)
@@ -57,3 +55,5 @@ map <leader>t <Action>(InsertLiveTemplate)
 
 """ space mappings
 map <space>e <Action>(ShowErrorDescription)
+map <space>r <Action>(Run)
+map <space>R <Action>(Stop)
