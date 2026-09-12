@@ -32,6 +32,9 @@ vim.pack.add({
   -- Тема
   { src = 'https://github.com/ellisonleao/gruvbox.nvim' },
   { src = 'https://github.com/xiyaowong/nvim-transparent' },
+
+  -- Превью Markdown/HTML в браузере
+  { src = 'https://github.com/brianhuster/live-preview.nvim' },
 })
 
 require('nvim-tree').setup({
@@ -81,3 +84,5 @@ require('blink.cmp').setup({
   sources = { default = { 'lsp', 'path', 'buffer' } },
   signature = { enabled = true },
 })
+
+require('livepreview.config').set({})
