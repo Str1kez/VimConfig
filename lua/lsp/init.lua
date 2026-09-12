@@ -1,6 +1,0 @@
-require('lsp.cmp')
-require('lsp.snip')
-require('lsp.settings')
-require('lsp.config')
-require('lsp.null-ls')
-require('lsp.servers')
