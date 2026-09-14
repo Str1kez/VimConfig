@@ -54,7 +54,3 @@ lsp/<name>.lua           -- переопределения LSP-конфигов 
 docker-compose определяется автоматически через SchemaStore, без
 дополнительной настройки.
 
-## `.ideavimrc`
-
-Отдельная сущность — конфиг [IdeaVim](https://github.com/JetBrains/ideavim)
-для JetBrains-редакторов, к этому конфигу Neovim отношения не имеет.
