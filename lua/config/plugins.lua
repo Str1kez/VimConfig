@@ -78,7 +78,12 @@ require('fzf-lua').setup({
 })
 
 require('blink.cmp').setup({
-  keymap = { preset = 'default' },
+  keymap = {
+    preset = 'default',
+    ['<Tab>'] = { 'select_and_accept', 'snippet_forward', 'fallback' },
+    ['<S-Tab>'] = { 'snippet_backward', 'fallback' },
+    ['<CR>'] = false,
+  },
   appearance = { nerd_font_variant = 'mono' },
   completion = { documentation = { auto_show = true } },
   sources = { default = { 'lsp', 'path', 'buffer' } },
